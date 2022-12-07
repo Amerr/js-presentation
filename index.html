@@ -45,25 +45,7 @@
             </div>
           </div>
         </section>
-        <section data-auto-animate>
-          <div class="fragment fade-in text-9xl">JS Good & Bad parts</div>
-        </section>
-        <section
-          data-auto-animate
-          data-transition="zoom"
-          data-background-image="./img/js-good-and-bad.jpeg"
-        >
-          <div class="text-black text-9xl">JS Good & Bad parts</div>
-        </section>
-        <section data-auto-animate>
-          <div class="flex flex-col">
-            <div>🧠 Brain teaser</div>
-            <a class="fragment fade-up">https://github.com/denysdovhan/wtfjs</a>
-          </div>
-        </section>
-        <section data-auto-animate>
-          <p data-id="dev">🧑‍💻 Developer</p>
-        </section>
+
         <section data-auto-animate>
           <p data-id="dev" class="line-through">🧑‍💻 Developer</p>
         </section>
@@ -76,136 +58,80 @@
             <li class="fragment fade-up capitalize">💔 Divorce the solution</li>
           </ul>
         </section>
-        <section>History of Javascript</section>
-        <section>
-          <div class="flex flex-col">
-            <div>Event loop</div>
-            <img src="./img/js-event-loop.png" alt="" />
-          </div>
-        </section>
-        <section>
-          Everything is object
-          <div class="flex">
-            <ul class="list-none text-3xl my-10">
-              <li>null</li>
-              <li>undefined</li>
-              <li>strings</li>
-              <li>numbers</li>
-              <li>boolean</li>
-              <li>symbols</li>
-            </ul>
-          </div>
-        </section>
-        <section>
-          <pre>
-						<code data-trim data-noescape>
-							var a = "foo"
-							a.includes('f')
-							/**
-							* "foo".includes("f")
-							* String.prototype.includes()
-							*/
-							//
-						</code>
-					</pre>
-        </section>
+        <section data-auto-animate><div data-id="promise">Asynchronous & Promise</div></section>
         <section data-auto-animate>
           <div class="flex flex-col">
-            <div data-id="proto">Prototype</div>
-          </div>
-        </section>
-        <section data-auto-animate>
-          <div class="flex flex-col">
-            <div data-id="proto">Prototype</div>
-            <img src="./img/js-prototype.png" />
-          </div>
-        </section>
-        <section data-auto-animate>
-          <div data-id="proto">Prototype</div>
-          <pre>
-						<code data-trim data-noescape>
-					const o = {
-						a: 1,
-						b: 2,
-						// __proto__ sets the [[Prototype]]. It's specified here
-						// as another object literal.
-						__proto__: {
-							b: 3,
-							c: 4,
-						},
-					};
-				</code>
-			</pre>
-        </section>
-        <section
-          data-background-iframe="http://tansongyang.github.io/js-prototype-chain-viewer/"
-          data-background-interactive
-        ></section>
-        <section data-auto-animate="">
-          <div class="flex flex-col justify-center">
-            <p data-id="scope">Scope</p>
-            <ul class="list-none text-3xl my-10">
-              <li>Global scope</li>
-              <li>Module scope</li>
-              <li>Function scope</li>
-            </ul>
-          </div>
-        </section>
-        <section data-auto-animate="">
-          <p data-id="scope">Block Scope</p>
-          <div class="flex">
+            <div data-id="promise">Asynchronous & Promise</div>
             <pre>
 							<code data-trim data-noescape>
-								{
-									var x = 10
-								}
+								let a = new Promise((res, rej) => {
+									console.log('sadf')
+									
+									if(Math.random() > 0.5) {
+										res(1)
+									} else {
+												rej(2)
+									}
+								})
 								
-								console.log(x)
+								a.then((b) => console.log(b) ).catch((c) => console.log(c))
 							</code>
 						</pre>
-            <div class="w-10 m-10"></div>
-            <pre>
-						<code data-trim data-noescape>
-							{
-								let x = 10
-							}
-							
-							console.log(x)
-						</code>
-					</pre>
           </div>
         </section>
-        <section data-auto-animate="">
-          <div data-id="closure">Closure</div>
+        <section>workshop - React test case</section>
+        <section data-auto-animate>coffescript</section>
+				<section data-auto-animate>coffescript, ES6</section>
+				<section data-auto-animate>coffescript, ES6, Typescript</section>
+        <section>🥚 🐣 🐥 🐓 🍗 Evolution of framework</section>
+        <section data-auto-animate>
+					<div class="flex">
+						<div>⚛️ Evolution of React</div>
+						<ul data-id="css" class="list-none text-3xl m-20">
+							<li class="fragment fade-up capitalize">📚 React is a UI library</li>
+							<li class="fragment fade-up capitalize">VDOM</li>
+							<li class="fragment fade-up capitalize">Component structure</li>
+							<li class="fragment fade-up capitalize">💪 Framework flexibility</li>
+							<li class="fragment fade-up capitalize">😡 CSS in JS </li>
+						</ul>
+					</div>
         </section>
-        <section data-auto-animate="">
-          <div data-id="closure">Closure</div>
-          <pre>
-						<code data-trim data-noescape>
-							function makeAdder(x) {
-								return function (y) {
-									return x + y;
-								};
-							}
-							
-							const add5 = makeAdder(5);
-							const add10 = makeAdder(10);
-							
-							console.log(add5(2)); // 7
-							console.log(add10(2)); // 12
-						</code>
-					</pre>
+				<section data-auto-animate>
+					<div class="flex">
+						<div>⚛️ Evolution of React</div>
+						<ul data-id="css" class="list-none text-3xl m-20">
+							<li class="capitalize">📚 React is a UI library</li>
+							<li class="capitalize">VDOM</li>
+							<li class="capitalize">Component structure</li>
+							<li class="capitalize">💪 Framework flexibility</li>
+							<li class="capitalize">🤯 CSS in JS </li>
+						</ul>
+					</div>
         </section>
+				<section data-background-image="./img/vdom.avif"></section>
+				<section data-background-image="./img/vdom-diff.gif"></section>
         <section>
-					<div class="flex flex-col">
-						<div data-id="proto">Event capturing and bubbling</div>
-            <img src="./img/event.png" />
-          </div>
-        </section>
-				<section>Async operation - promise</section>
+					React API
+					<pre>
+						<code data-trim data-noescape>
+							class Hello extends React.Component {
+								render() {
+									return React.createElement('div',  { style: { color: "green" } }, `Hello ${this.props.toWhat}`);
+								}
+							}
+							
+							const root = ReactDOM.createRoot(document.getElementById('root'));
+							root.render(React.createElement(Hello, {toWhat: 'World'}, null));
+						</code>
+					</pre>
+				</section>
+				<section>React life cycle</section>
+				<section data-background-image="./img/react-life-cycle.png"></section>
+        <section>React life cycle - example with form - useEffect</section>
+        <section>DRY vs WET</section>
+        <section>Presentational vs Functional Component</section>
       </div>
     </div>
-
     <script src="dist/reveal.js"></script>
     <script src="plugin/notes/notes.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
